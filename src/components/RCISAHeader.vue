@@ -26,7 +26,7 @@ const show_menu = ref(false)
     </div>
   </div>
 
-  <div :class="`mobile-menu w-full h-[100dvh] fixed z-[9] ${show_menu ? 'show-mobile-menu' : null}`">
+  <div :class="`mobile-menu gradient-bkg w-full h-[100vh] fixed z-[9] ${show_menu ? 'show-mobile-menu' : null}`">
     <button class="close-button" @click.prevent="show_menu = false">
       <close-icon />
     </button>
@@ -85,8 +85,6 @@ const show_menu = ref(false)
 }
 
 .mobile-menu {
-  background: #113357E5;
-  backdrop-filter: blur(2.5rem);
   padding: 2.4rem;
   display: none;
   flex-direction: column;
