@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 html {
+  font-family: "Outfit", serif;
   font-size: 10px;
   box-sizing: border-box;
 }
@@ -64,6 +65,4 @@ html {
   --color-darkBlue-80: #091A2C;
   --color-darkBlue-90: #06111D;
   --color-darkBlue-100: #030A11;
-
-  --color-white: #FFF
 }

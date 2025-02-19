@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import RCISAHeader from '@/components/RCISAHeader.vue'
+import RCISAFooter from '@/components/RCISAFooter.vue'
 </script>
 
 <template>
   <RCISAHeader />
   <RouterView />
+  <RCISAFooter />
 </template>
 
 <style scoped>
