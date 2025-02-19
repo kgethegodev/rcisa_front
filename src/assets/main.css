@@ -1,35 +1,50 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+html {
+  font-size: 10px;
+  box-sizing: border-box;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.container {
+  max-width: min(126.2rem, calc(100% - 4.8rem));
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
+@theme {
+  --color-green-10: #CEE9DA;
+  --color-green-20: #ADDAC1;
+  --color-green-30: #85C7A2;
+  --color-green-40: #5CB483;
+  --color-green-50: #33A264;
+  --color-green-base: #0A8F45;
+  --color-green-60: #08773A;
+  --color-green-70: #075F2E;
+  --color-green-80: #054823;
+  --color-green-90: #033017;
+  --color-green-100: #021D0E;
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+  --color-blue-10: #D5EEF8;
+  --color-blue-20: #B9E2F3;
+  --color-blue-30: #96D4ED;
+  --color-blue-40: #72C5E7;
+  --color-blue-50: #4FB7E1;
+  --color-blue-base: #2CA8DB;
+  --color-blue-60: #25BCB7;
+  --color-blue-70: #1D7092;
+  --color-blue-80: #16546E;
+  --color-blue-90: #0F3849;
+  --color-blue-100: #09222C;
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+  --color-darkBlue-10: #CFD6DD;
+  --color-darkBlue-20: #B0BBC7;
+  --color-darkBlue-30: #8899AB;
+  --color-darkBlue-40: #60778F;
+  --color-darkBlue-50: #395573;
+  --color-darkBlue-base: #113357;
+  --color-darkBlue-60: #0E2B49;
+  --color-darkBlue-70: #08223A;
+  --color-darkBlue-80: #091A2C;
+  --color-darkBlue-90: #06111D;
+  --color-darkBlue-100: #030A11;
+
+  --color-white: #FFF
 }
