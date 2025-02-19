@@ -44,6 +44,8 @@ const show_menu = ref(false)
 .rcisa-header {
   padding: 2.4rem 0;
   border-radius: 0 0 1.6rem 1.6rem;
+  box-shadow: 0px 12px 16px -4px #1018281A;
+
 
   .rcisa-menu-container {
     display: flex;
