@@ -1,23 +1,28 @@
 <script setup lang="ts">
-
 import MenuIcon from '@/components/icons/MenuIcon.vue'
 import CloseIcon from '@/components/icons/CloseIcon.vue'
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const show_menu = ref(false)
+
+watch(route, () => {
+  show_menu.value = false
+})
 </script>
 <!--TODO: add animations and gradients on mobile menu-->
 <template>
   <div class="rcisa-header fixed w-full bg-white z-[1]">
     <div class="container mx-auto flex flex-row items-center justify-between">
-      <router-link>
+      <router-link to="/">
         <img src="@/assets/logo.svg" alt="RCISA Logo" srcset="">
       </router-link>
       <div class="rcisa-menu-container">
-        <router-link>Home</router-link>
-        <router-link>Our Story</router-link>
-        <router-link>Events</router-link>
-        <router-link>Media</router-link>
+        <router-link  to="/">Home</router-link>
+        <router-link to="/our-story">Our Story</router-link>
+        <router-link to="/events">Events</router-link>
+        <router-link to="/media">Media</router-link>
       </div>
 
       <button class="menu-button" @click.prevent="show_menu = true">
@@ -32,10 +37,10 @@ const show_menu = ref(false)
     </button>
 
     <div class="mobile-menu-items w-full flex flex-col gap-[1.6rem]">
-      <router-link>Home</router-link>
-      <router-link>Our Story</router-link>
-      <router-link>Events</router-link>
-      <router-link>Media</router-link>
+      <router-link  to="/">Home</router-link>
+      <router-link to="/our-story">Our Story</router-link>
+      <router-link to="/events">Events</router-link>
+      <router-link to="/media">Media</router-link>
     </div>
   </div>
 </template>
@@ -59,7 +64,7 @@ const show_menu = ref(false)
       color: var(--color-darkBlue-base);
       transition: .3s linear;
 
-      &:hover {
+      &:hover, &.router-link-active {
         color: var(--color-green-base);
       }
     }
@@ -103,7 +108,11 @@ const show_menu = ref(false)
       font-size: 3rem;
       font-weight: 700;
       line-height: 3.8rem;
-      color: var(--color-white);
+      color: #919191;
+
+      &.router-link-active {
+        color: var(--color-white);
+      }
     }
   }
 
