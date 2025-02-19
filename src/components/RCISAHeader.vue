@@ -1,0 +1,114 @@
+<script setup lang="ts">
+
+import MenuIcon from '@/components/icons/MenuIcon.vue'
+import CloseIcon from '@/components/icons/CloseIcon.vue'
+import { ref } from 'vue'
+
+const show_menu = ref(false)
+</script>
+<!--TODO: add animations and gradients on mobile menu-->
+<template>
+  <div class="rcisa-header fixed w-full bg-white z-[1]">
+    <div class="container mx-auto flex flex-row items-center justify-between">
+      <router-link>
+        <img src="@/assets/logo.svg" alt="RCISA Logo" srcset="">
+      </router-link>
+      <div class="rcisa-menu-container">
+        <router-link>Home</router-link>
+        <router-link>Our Story</router-link>
+        <router-link>Events</router-link>
+        <router-link>Media</router-link>
+      </div>
+
+      <button class="menu-button" @click.prevent="show_menu = true">
+        <menu-icon />
+      </button>
+    </div>
+  </div>
+
+  <div :class="`mobile-menu w-full h-[100dvh] fixed z-[9] ${show_menu ? 'show-mobile-menu' : null}`">
+    <button class="close-button" @click.prevent="show_menu = false">
+      <close-icon />
+    </button>
+
+    <div class="mobile-menu-items w-full flex flex-col gap-[1.6rem]">
+      <router-link>Home</router-link>
+      <router-link>Our Story</router-link>
+      <router-link>Events</router-link>
+      <router-link>Media</router-link>
+    </div>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.rcisa-header {
+  padding: 2.4rem 0;
+  border-radius: 0 0 1.6rem 1.6rem;
+
+  .rcisa-menu-container {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      padding: 1.2rem .8rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "outfit", serif;
+      color: var(--color-darkBlue-base);
+      transition: .3s linear;
+
+      &:hover {
+        color: var(--color-green-base);
+      }
+    }
+  }
+
+  .menu-button {
+    display: none;
+    padding: 1.6rem;
+  }
+
+  @media (max-width: 560px) {
+    border-radius: 0;
+    padding: 6.3rem 0 1.6rem;
+
+    .rcisa-menu-container {
+      display: none;
+    }
+
+    .menu-button {
+      display: block;
+    }
+  }
+}
+
+.mobile-menu {
+  background: #113357E5;
+  backdrop-filter: blur(2.5rem);
+  padding: 2.4rem;
+  display: none;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: flex-end;
+
+  .close-button {
+    padding: 1.6rem;
+  }
+
+  .mobile-menu-items {
+    a {
+      padding: 2.4rem;
+      text-align: center;
+      font-family: "Outfit", serif;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.8rem;
+      color: var(--color-white);
+    }
+  }
+
+  &.show-mobile-menu {
+    display: flex;
+  }
+}
+</style>

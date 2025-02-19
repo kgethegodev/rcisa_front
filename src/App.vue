@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import RCISAHeader from '@/components/RCISAHeader.vue'
 </script>
 
 <template>
+  <RCISAHeader />
   <RouterView />
 </template>
 
