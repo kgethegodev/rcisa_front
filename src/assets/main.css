@@ -6,6 +6,91 @@ html {
   box-sizing: border-box;
 }
 
+/*fonts*/
+.anton-2xl-regular {
+  font-family: "Anton", serif;
+  font-size: 7.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 7.2rem;
+  letter-spacing: .036rem;
+}
+
+.anton-md-regular {
+  font-family: "Anton", serif;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.6rem;
+}
+
+.outfit-md-regular {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.outfit-lg-regular {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+
+.outfit-xs-bold {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+
+.rcisa-btn {
+  padding: 1.6rem 2.8rem;
+  border-radius: 5rem;
+  color: var(--color-white, #FFF);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem;
+  background: var(--color-green-base, #0A8F45);
+  transition: .3s linear;
+
+  &.alt-rcisa-btn {
+    background: var(--color-darkBlue-base, #113357);
+  }
+
+  &:hover {
+    background: var(--color-darkBlue-base, #113357);
+
+    &.alt-rcisa-btn {
+      background: var(--color-green-base, #0A8F45);
+    }
+  }
+}
+
+h1 {
+  color: var(--color-darkBlue-base, #113357);
+  font-family: "Anton", serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+
+  span {
+    font-family: "Outfit", serif;
+    color: var(--color-green-base, #0A8F45);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.2rem;
+  }
+}
+
 .container {
   max-width: min(126.2rem, calc(100% - 4.8rem));
 }
@@ -30,6 +115,42 @@ html {
 }
 
 @theme {
+    --color-success-10: #CEE9DA;
+  --color-success-20: #ADDAC1;
+  --color-success-30: #85C7A2;
+  --color-success-40: #5CB483;
+  --color-success-50: #33A264;
+  --color-success-base: #0A8F45;
+  --color-success-60: #08773A;
+  --color-success-70: #075F2E;
+  --color-success-80: #054823;
+  --color-success-90: #033017;
+  --color-success-100: #021D0E;
+
+  --color-error-10: #F1D4D4;
+  --color-error-20: #E8B7B8;
+  --color-error-30: #DD9495;
+  --color-error-40: #D27071;
+  --color-error-50: #C64C4E;
+  --color-error-base: #BB282A;
+  --color-error-60: #9C2123;
+  --color-error-70: #7D1B1C;
+  --color-error-80: #5E1415;
+  --color-error-90: #3E0D0E;
+  --color-error-100: #250808;
+
+  --color-warning-10: #FEEDD4;
+  --color-warning-20: #FDE2B7;
+  --color-warning-30: #FDD393;
+  --color-warning-40: #FCC46F;
+  --color-warning-50: #FBB64B;
+  --color-warning-base: #FAA727;
+  --color-warning-60: #D08821;
+  --color-warning-70: #A76F1A;
+  --color-warning-80: #7D5414;
+  --color-warning-90: #53380D;
+  --color-warning-100: #322108;
+
   --color-green-10: #CEE9DA;
   --color-green-20: #ADDAC1;
   --color-green-30: #85C7A2;
@@ -65,4 +186,18 @@ html {
   --color-darkBlue-80: #091A2C;
   --color-darkBlue-90: #06111D;
   --color-darkBlue-100: #030A11;
+
+  --color-white-10: #F7F7F7;
+  --color-white-20: #F2F2F2;
+  --color-white-30: #ECECEC;
+  --color-white-40: #E6E6E6;
+  --color-white-50: #DFDFDF;
+  --color-white-base: #D9D9D9;
+  --color-white-60: #B5B5B5;
+  --color-white-70: #919191;
+  --color-white-80: #6D6D6D;
+  --color-white-90: #484848;
+  --color-white-100: #2B2B2B;
+
+  --color-black-base: #0B0B0B;
 }
