@@ -13,7 +13,7 @@ watch(route, () => {
 </script>
 <!--TODO: add animations and gradients on mobile menu-->
 <template>
-  <div class="rcisa-header fixed w-full bg-white z-[1]">
+  <div class="rcisa-header fixed w-full bg-white z-[8]">
     <div class="container mx-auto flex flex-row items-center justify-between">
       <router-link to="/">
         <img src="@/assets/logo.svg" alt="RCISA Logo" srcset="">
@@ -22,9 +22,12 @@ watch(route, () => {
         <router-link  to="/">Home</router-link>
         <router-link to="/our-story">Our Story</router-link>
         <router-link to="/events">Events</router-link>
+        <router-link to="/events">Ministries</router-link>
         <router-link to="/media">Media</router-link>
+        <router-link to="/media">Donate</router-link>
       </div>
 
+      <router-link to="/" class="rcisa-btn">Plan a visit</router-link>
       <button class="menu-button" @click.prevent="show_menu = true">
         <menu-icon />
       </button>
@@ -47,7 +50,7 @@ watch(route, () => {
 
 <style scoped lang="scss">
 .rcisa-header {
-  padding: 2.4rem 0;
+  padding: 1.2rem 0;
   border-radius: 0 0 1.6rem 1.6rem;
   box-shadow: 0px 12px 16px -4px #1018281A;
 
@@ -70,6 +73,11 @@ watch(route, () => {
     }
   }
 
+  .rcisa-btn {
+      font-size: 1.4rem;
+      padding: 1rem 1.6rem;
+    }
+
   .menu-button {
     display: none;
     padding: 1.6rem;
@@ -79,7 +87,7 @@ watch(route, () => {
     border-radius: 0;
     padding: 6.3rem 0 1.6rem;
 
-    .rcisa-menu-container {
+    .rcisa-menu-container, .rcisa-btn {
       display: none;
     }
 

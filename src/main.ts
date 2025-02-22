@@ -1,4 +1,6 @@
 import './assets/main.css'
+import VueFeather from 'vue-feather';
+
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -10,5 +12,5 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-
+app.component(VueFeather.name, VueFeather)
 app.mount('#app')

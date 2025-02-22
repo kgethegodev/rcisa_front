@@ -31,11 +31,37 @@ html {
   line-height: 2.4rem;
 }
 
+.outfit-md-medium {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.outfit-md-semibold {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
 .outfit-lg-regular {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 3.2rem;
+}
+
+.outfit-xl-regular {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+
+.outfit-xl-bold {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
 }
 
 .outfit-xs-bold {
@@ -56,6 +82,7 @@ html {
   line-height: 2.8rem;
   background: var(--color-green-base, #0A8F45);
   transition: .3s linear;
+  display: inline-block;
 
   &.alt-rcisa-btn {
     background: var(--color-darkBlue-base, #113357);
@@ -88,6 +115,10 @@ h1 {
     font-style: normal;
     font-weight: 500;
     line-height: 3.2rem;
+  }
+
+  &.text-white {
+    color: var(--color-white, #FFF);
   }
 }
 
@@ -186,6 +217,7 @@ h1 {
   --color-darkBlue-80: #091A2C;
   --color-darkBlue-90: #06111D;
   --color-darkBlue-100: #030A11;
+  --color-darkBlue-700: #0B223A;
 
   --color-white-10: #F7F7F7;
   --color-white-20: #F2F2F2;
