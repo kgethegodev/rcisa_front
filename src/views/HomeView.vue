@@ -200,6 +200,10 @@ import SermonCard from '@/components/cards/SermonCard.vue'
     height: 100%;
     transform: translate(-50%, -50%);
   }
+
+  @media (max-width: 991px) {
+    min-height: calc(100dvh - 13.9rem);
+  }
 }
 
 .home-events-card-row {
