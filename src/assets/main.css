@@ -126,23 +126,14 @@ h1 {
   max-width: min(126.2rem, calc(100% - 4.8rem));
 }
 
-.gradient-bkg {
-  background: linear-gradient(-45deg, rgb(17, 53, 81), rgb(23, 76, 85), rgb(23, 86, 120));
-  background-size: 200% 200%;
-  animation: gradientAnimation 5s ease infinite;
-  backdrop-filter: blur(2.5rem);
-}
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.gradient-bkg {
+  background: linear-gradient(to bottom, #0B223A, #0b3d2b);
+  /*background-size: 200% 200%;*/
+  height: 100vh;
+  backdrop-filter: blur(2.5rem);
+  position: relative;
+  overflow: hidden;
 }
 
 @theme {

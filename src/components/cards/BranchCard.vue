@@ -15,14 +15,14 @@
       <div class="min-w-[2.4rem]">
         <vue-feather stroke="var(--color-darkBlue-40)" type="map"></vue-feather>
       </div>
-      <p class="outfit-md-regular text-black">234 Ben Schoeman, Pretoria Central, Gauteng, 012</p>
+      <p class="outfit-md-regular text-[var(--color-darkBlue-base)]">234 Ben Schoeman, Pretoria Central, Gauteng, 012</p>
     </div>
 
     <div class="flex flex-row gap-[.8rem]">
       <div class="min-w-[2.4rem]">
         <vue-feather stroke="var(--color-darkBlue-40)" type="phone"></vue-feather>
       </div>
-      <p class="outfit-md-regular text-black">+27 12 345 6789</p>
+      <p class="outfit-md-regular text-[var(--color-darkBlue-base)]">+27 12 345 6789</p>
     </div>
 
     <div class="flex flex-row gap-[.8rem]">
