@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="branch-card rounded-[2.4rem] p-[2.4rem] flex flex-col gap-[2rem]">
-    <div class="flex flex-row justify-between">
+  <div class="branch-card rounded-[2.4rem] sm:p-[2.4rem] p-[1.6rem] flex flex-col sm:gap-[2rem] gap-[1.6rem]">
+    <div class="flex flex-row justify-between items-center">
       <p class="outfit-xl-bold text-[var(--color-darkBlue-base)]">Branch Name</p>
       <router-link to="/" class="branch-card-link">
         <vue-feather stroke="var(--color-white)" type="chevron-right"></vue-feather>

@@ -14,6 +14,11 @@ html {
   font-weight: 400;
   line-height: 7.2rem;
   letter-spacing: .036rem;
+  
+  @media (max-width: 991px) {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
 }
 
 .anton-md-regular {
@@ -22,6 +27,10 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 4.6rem;
+
+  @media (max-width: 991px) {
+    font-size: 4rem;
+  }
 }
 
 .outfit-md-regular {
@@ -29,6 +38,20 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
+
+  @media (max-width: 991px) {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+}
+
+.outfit-sm-regular {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 .outfit-md-medium {
@@ -37,9 +60,21 @@ html {
   line-height: 2.4rem;
 }
 
+.outfit-sm-medium {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
 .outfit-md-semibold {
   font-weight: 600;
   font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.outfit-sm-semibold {
+  font-weight: 600;
+  font-size: 1.4rem;
   line-height: 2.4rem;
 }
 
@@ -48,6 +83,10 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 3.2rem;
+  
+  @media (max-width: 991px) {
+    font-size: 1.4rem;
+  }
 }
 
 .outfit-xl-regular {
@@ -71,6 +110,13 @@ html {
   line-height: 2rem;
 }
 
+.outfit-lg-bold {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
 
 .rcisa-btn {
   padding: 1.6rem 2.8rem;
@@ -83,6 +129,7 @@ html {
   background: var(--color-green-base, #0A8F45);
   transition: .3s linear;
   display: inline-block;
+  text-align: center;
 
   &.alt-rcisa-btn {
     background: var(--color-darkBlue-base, #113357);
@@ -94,6 +141,12 @@ html {
     &.alt-rcisa-btn {
       background: var(--color-green-base, #0A8F45);
     }
+  }
+  
+  @media  (max-width: 991px) {
+    padding: 1rem 1.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -120,6 +173,17 @@ h1 {
   &.text-white {
     color: var(--color-white, #FFF);
   }
+
+  @media (max-width: 991px) {
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+
+    span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+    }
+  }
 }
 
 .container {
@@ -130,7 +194,7 @@ h1 {
 .gradient-bkg {
   background: linear-gradient(to bottom, #0B223A, #0b3d2b);
   /*background-size: 200% 200%;*/
-  height: 100vh;
+  min-height: 100vh;
   backdrop-filter: blur(2.5rem);
   position: relative;
   overflow: hidden;

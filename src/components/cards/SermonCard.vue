@@ -1,15 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="sermon-card flex flex-col gap-[2.4rem]">
+  <div class="sermon-card flex flex-col sm:gap-[2.4rem] gap-[1.6rem]">
     <img src="@/assets/placeholder-1.png" alt="" class="max-w-full" />
     <div class="flex flex-col gap-[.8rem] sermon-card-info">
-      <p class="text-[var(--color-green-base)] outfit-md-semibold">November 16, 2024</p>
-      <p class="text-[var(--color-darkBlue-base)] outfit-xs-bold">
+      <p class="text-[var(--color-green-base)] sm:outfit-md-semibold outfit-sm-semibold">November 16, 2024</p>
+      <p class="text-[var(--color-darkBlue-base)] sm:outfit-xs-bold outfit-lg-bold">
         Pretoria | Sunday Service with Rev
       </p>
     </div>
-    <div class="sermon-link-container">
+    <div class="sermon-link-container sm:block hidden">
       <a href="#" class="sermon-link gap-[.8rem]">
         Watch Video
         <vue-feather type="external-link"></vue-feather>

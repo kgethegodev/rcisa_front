@@ -32,7 +32,7 @@ watch(route, () => {
     </div>
   </div>
 
-  <div :class="`mobile-menu gradient-bkg w-full h-[100vh] fixed z-[9] ${show_menu ? 'show-mobile-menu' : null}`">
+  <div :class="`mobile-menu gradient-bkg w-full h-[100vh] z-[9] ${show_menu ? 'show-mobile-menu' : null}`">
     <button class="close-button" @click.prevent="show_menu = false">
       <vue-feather stroke="var(--color-white)" type="x"></vue-feather>
     </button>
@@ -81,7 +81,7 @@ watch(route, () => {
     padding: 1.6rem;
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 991px) {
     border-radius: 0;
     padding: 6.3rem 0 1.6rem;
 
@@ -101,6 +101,7 @@ watch(route, () => {
   flex-direction: column;
   gap: 3.2rem;
   align-items: flex-end;
+  position: fixed!important;
 
   .close-button {
     padding: 1.6rem;

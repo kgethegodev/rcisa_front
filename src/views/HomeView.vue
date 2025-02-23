@@ -5,7 +5,7 @@ const rcisa_events: IEvent[] = [
   {
     title: 'Vue.js Workshop',
     date: new Date('2025-03-10'),
-    host: 'Vue Community',
+    host: null,
     location: 'Cape Town, South Africa',
     start_time: '14:00',
     end_time: '16:30',
@@ -38,16 +38,15 @@ const rcisa_events: IEvent[] = [
 ]
 import type { IEvent } from '../../types/Event.type.ts'
 import EventCard from '@/components/cards/EventCard.vue'
-import { ref } from 'vue'
 import SermonCard from '@/components/cards/SermonCard.vue'
 </script>
 
 <template>
   <div class="home-banner">
     <div class="home-banner-content">
-      <div class="container mx-auto flex flex-col gap-[4rem]">
+      <div class="container mx-auto flex flex-col sm:gap-[4rem] gap-[2.4rem]">
         <p class="anton-2xl-regular text-white">
-          REFORMED CHURCH INTERNATIONAL&nbsp;SOUTH&nbsp;AFRICA
+          REFORMED CHURCH <br> INTERNATIONAL SOUTH&nbsp;AFRICA
         </p>
         <div class="text-white outfit-lg-regular">
           <p>
@@ -73,6 +72,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
       loop
       preload="auto"
       muted
+      playsinline
     />
   </div>
 
@@ -96,9 +96,9 @@ import SermonCard from '@/components/cards/SermonCard.vue'
         Our Story
       </h1>
 
-      <div class="flex gap-[4.8rem]">
+      <div class="flex gap-[4.8rem] sm:flex-row flex-col-reverse">
         <div class="text-white">
-          <p class="mb-[3.2rem] outfit-xl-regular">
+          <p class="mb-[3.2rem] sm:outfit-xl-regular outfit-sm-regular">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
             varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
             id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur
@@ -107,7 +107,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
             Vivamus id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce
             consectetur quis.
           </p>
-          <p class="mb-[3.2rem] outfit-xl-regular">
+          <p class="mb-[3.2rem] sm:outfit-xl-regular outfit-sm-regular">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
             varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
             id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur
@@ -158,10 +158,13 @@ import SermonCard from '@/components/cards/SermonCard.vue'
 <style lang="scss">
 .home-banner {
   position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
 
   .home-banner-content {
-    position: absolute;
-    height: 100%;
+    position: relative;
+    min-height: 100vh;
     width: 100%;
     background: rgba(25, 53, 89, 0.3);
     display: flex;
@@ -170,20 +173,32 @@ import SermonCard from '@/components/cards/SermonCard.vue'
     justify-content: flex-end;
     padding-bottom: 9.6rem;
     z-index: 7;
+
+    @media (max-width: 991px) {
+      justify-content: start;
+      padding-bottom: 3.3rem;
+      padding-top: 17.2rem;
+
+      .rcisa-btn {
+        width: 100%;
+      }
+
+      br {
+        display: none;
+      }
+    }
   }
 
   video {
-    width: 100%;
     z-index: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
   }
-}
-
-.home-events-card-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 0px;
 }
 
 .home-events-card-row {
@@ -192,6 +207,13 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  }
 }
 
 .branches-container {
@@ -200,6 +222,15 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 3.2rem;
   grid-row-gap: 3.2rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .sermons-container {
@@ -208,5 +239,14 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   grid-template-rows: 1fr;
   grid-column-gap: 3.2rem;
   grid-row-gap: 3.2rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 }
 </style>

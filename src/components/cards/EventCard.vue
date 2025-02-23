@@ -17,34 +17,33 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="event-card p-[2.4rem] event-card flex flex-row gap-[3.2rem] bg-[var(--color-darkBlue-base)]">
-    <p class="event-date anton-md-regular text-white">
+  <div class="event-card p-[2.4rem] bg-[var(--color-darkBlue-base)] flex flex-col gap-[1.6rem]">
+    <div class="flex flex-row sm:gap-[3.2rem] gap-[1.6rem]">
+      <p class="event-date anton-md-regular text-white">
       <span class="text-[var(--color-success-base)]">{{rcisa_event.month}}</span>
       {{rcisa_event.day}}
     </p>
-    <div class="flex flex-col gap-[1.6rem]">
       <div class="flex flex-col gap-[.8rem]">
-        <p class="outfit-xs-bold text-white">{{event.title}}</p>
+        <p class="sm:outfit-xs-bold outfit-lg-bold text-white">{{event.title}}</p>
         <p class="outfit-md-regular text-[var(--color-darkBlue-10)]">{{event.host ? `Hosted By: ${event.host}` : 'Check WhatsApp groups or for more information'}}</p>
       </div>
-
-      <div class="flex flex-row gap-[.8rem]">
-        <div class="event-detail-pill flex flex-row gap-[.4rem] py-[.4rem] px-[1rem] bg-[var(--color-darkBlue-50)] rounded-[1.6rem] items-center">
-          <vue-feather size="2rem" stroke="var(--color-darkBlue-30)" type="map-pin"></vue-feather>
-          <p class="text-white outfit-md-medium">Polokwane Branch</p>
-        </div>
-
-        <div class="event-detail-pill flex flex-row gap-[.4rem] py-[.4rem] px-[1rem] bg-[var(--color-darkBlue-50)] rounded-[1.6rem] items-center">
-          <vue-feather size="2rem" stroke="var(--color-darkBlue-30)" type="clock"></vue-feather>
-          <p class="text-white outfit-md-medium">09:00 - 0:30</p>
-        </div>
-
-        <div class="event-detail-pill flex flex-row gap-[.4rem] py-[.4rem] px-[1rem] bg-[var(--color-darkBlue-50)] rounded-[1.6rem] items-center">
-          <vue-feather size="2rem" stroke="var(--color-darkBlue-30)" type="calendar"></vue-feather>
-          <p class="text-white outfit-md-medium">MAR 30 - 31</p>
-        </div>
-      </div>
     </div>
+    <div class="flex flex-row flex-wrap gap-[.8rem]">
+          <div class="event-detail-pill flex flex-row gap-[.4rem] py-[.4rem] px-[1rem] bg-[var(--color-darkBlue-50)] rounded-[1.6rem] items-center">
+            <vue-feather size="2rem" stroke="var(--color-darkBlue-30)" type="map-pin"></vue-feather>
+            <p class="text-white sm:outfit-md-medium outfit-sm-medium">Polokwane Branch</p>
+          </div>
+
+          <div class="event-detail-pill flex flex-row gap-[.4rem] py-[.4rem] px-[1rem] bg-[var(--color-darkBlue-50)] rounded-[1.6rem] items-center">
+            <vue-feather size="2rem" stroke="var(--color-darkBlue-30)" type="clock"></vue-feather>
+            <p class="text-white sm:outfit-md-medium outfit-sm-medium">09:00 - 0:30</p>
+          </div>
+
+          <div class="event-detail-pill flex flex-row gap-[.4rem] py-[.4rem] px-[1rem] bg-[var(--color-darkBlue-50)] rounded-[1.6rem] items-center">
+            <vue-feather size="2rem" stroke="var(--color-darkBlue-30)" type="calendar"></vue-feather>
+            <p class="text-white sm:outfit-md-medium outfit-sm-medium">MAR 30 - 31</p>
+          </div>
+        </div>
   </div>
 </template>
 
