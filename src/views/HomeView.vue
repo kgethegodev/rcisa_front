@@ -178,6 +178,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
       justify-content: start;
       padding-bottom: 3.3rem;
       padding-top: 17.2rem;
+      min-height: calc(100dvh - 13.9rem);
 
       .rcisa-btn {
         width: 100%;
