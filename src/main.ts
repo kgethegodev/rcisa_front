@@ -12,5 +12,8 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-app.component(VueFeather.name, VueFeather)
+if(VueFeather.name) {
+  app.component(VueFeather.name, VueFeather)
+}
+
 app.mount('#app')

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import MenuIcon from '@/components/icons/MenuIcon.vue'
-import CloseIcon from '@/components/icons/CloseIcon.vue'
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -29,14 +27,14 @@ watch(route, () => {
 
       <router-link to="/" class="rcisa-btn">Plan a visit</router-link>
       <button class="menu-button" @click.prevent="show_menu = true">
-        <menu-icon />
+        <vue-feather stroke="var(--color-white)" type="menu"></vue-feather>
       </button>
     </div>
   </div>
 
   <div :class="`mobile-menu gradient-bkg w-full h-[100vh] fixed z-[9] ${show_menu ? 'show-mobile-menu' : null}`">
     <button class="close-button" @click.prevent="show_menu = false">
-      <close-icon />
+      <vue-feather stroke="var(--color-white)" type="close"></vue-feather>
     </button>
 
     <div class="mobile-menu-items w-full flex flex-col gap-[1.6rem]">

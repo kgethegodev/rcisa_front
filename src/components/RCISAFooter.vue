@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import FacebookIcon from '@/components/icons/socials/FacebookIcon.vue'
-import InstagramIcon from '@/components/icons/socials/InstagramIcon.vue'
-import YoutubeIcon from '@/components/icons/socials/Youtube-Icon.vue'
 </script>
 
 <template>
@@ -28,13 +25,13 @@ import YoutubeIcon from '@/components/icons/socials/Youtube-Icon.vue'
     <div class="copyright-text text-[var(--color-darkBlue-30)]">Copyright ©{{new Date().getFullYear()}} Reformed church International. All Rights Reserved.</div>
     <div class="flex flex-row gap-[3.2rem] footer-socials">
       <a href="">
-        <facebook-icon  />
+        <vue-feather stroke="var(--color-white)" type="facebook"></vue-feather>
       </a>
       <a href="">
-        <instagram-icon />
+        <vue-feather stroke="var(--color-white)" type="instagram"></vue-feather>
       </a>
       <a href="">
-        <youtube-icon />
+        <vue-feather stroke="var(--color-white)" type="youtube"></vue-feather>
       </a>
     </div>
   </div>
