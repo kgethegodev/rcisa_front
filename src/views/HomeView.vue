@@ -48,7 +48,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
         <p class="anton-2xl-regular text-white">
           REFORMED CHURCH <br> INTERNATIONAL SOUTH&nbsp;AFRICA
         </p>
-        <div class="text-white outfit-lg-regular">
+        <div class="text-white sm:outfit-lg-regular outfit-sm-regular">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
             varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
@@ -77,7 +77,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   </div>
 
   <div class="bg-[var(--color-darkBlue-700)]">
-    <div class="container flex flex-col mx-auto gap-[4rem] py-[9.6rem]">
+    <div class="container flex flex-col mx-auto gap-[4rem] sm:py-[9.6rem] py-[4.8rem]">
       <h1 class="text-white">
         <span>Exciting things to look forward to</span>
         Upcoming Events
@@ -90,7 +90,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   </div>
 
   <div class="gradient-bkg">
-    <div class="container mx-auto py-[9.6rem] flex flex-col gap-[4rem]">
+    <div class="container mx-auto  sm:py-[9.6rem] py-[4.8rem] flex flex-col gap-[4rem]">
       <h1 class="text-white">
         <span>One big family</span>
         Our Story
@@ -122,7 +122,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
     </div>
   </div>
 
-  <div class="container flex flex-col mx-auto gap-[4rem] py-[9.6rem]">
+  <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
     <h1>
       <span>We would love to meet you!</span>
       VISIT OUR BRANCHES
@@ -138,7 +138,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
     </div>
   </div>
 
-  <div class="container flex flex-col mx-auto gap-[4rem] py-[9.6rem]">
+  <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
     <h1>
       <span>Hear the word</span>
       SERMONS
@@ -177,8 +177,8 @@ import SermonCard from '@/components/cards/SermonCard.vue'
     @media (max-width: 991px) {
       justify-content: start;
       padding-bottom: 3.3rem;
-      padding-top: 17.2rem;
-      min-height: calc(100dvh - 13.9rem);
+      padding-top: 12.5rem;
+      min-height: 100dvh;
 
       .rcisa-btn {
         width: 100%;
@@ -202,7 +202,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   }
 
   @media (max-width: 991px) {
-    min-height: calc(100dvh - 13.9rem);
+    min-height: 100dvh;
   }
 }
 

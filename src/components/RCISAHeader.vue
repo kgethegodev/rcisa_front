@@ -83,7 +83,7 @@ watch(route, () => {
 
   @media (max-width: 991px) {
     border-radius: 0;
-    padding: 6.3rem 0 1.6rem;
+    padding: 1.6rem 0;
 
     .rcisa-menu-container, .rcisa-btn {
       display: none;
