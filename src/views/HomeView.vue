@@ -48,7 +48,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
         <p class="anton-2xl-regular text-white">
           REFORMED CHURCH <br> INTERNATIONAL SOUTH&nbsp;AFRICA
         </p>
-        <div class="text-white sm:outfit-lg-regular outfit-sm-regular">
+        <div class="text-white outfit-lg-regular">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
             varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
