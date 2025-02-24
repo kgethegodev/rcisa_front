@@ -202,7 +202,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   }
 
   @media (max-width: 991px) {
-    min-height: 100dvh;
+    min-height: 100svh;
   }
 }
 
