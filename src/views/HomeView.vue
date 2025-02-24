@@ -158,13 +158,13 @@ import SermonCard from '@/components/cards/SermonCard.vue'
 <style lang="scss">
 .home-banner {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
   overflow: hidden;
 
   .home-banner-content {
     position: relative;
-    min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
     background: rgba(25, 53, 89, 0.3);
     display: flex;
@@ -178,7 +178,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
       justify-content: start;
       padding-bottom: 3.3rem;
       padding-top: 12.5rem;
-      min-height: 100dvh;
+      min-height: 100svh;
 
       .rcisa-btn {
         width: 100%;
