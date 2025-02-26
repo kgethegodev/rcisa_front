@@ -102,6 +102,11 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 3.2rem;
+
+  @media (max-width: 991px) {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
 }
 
 .outfit-xl-bold {
@@ -116,6 +121,13 @@ html {
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
+}
+
+.outfit-xs-medium {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
 }
 
 .outfit-lg-bold {
@@ -176,6 +188,10 @@ h1 {
     font-style: normal;
     font-weight: 500;
     line-height: 3.2rem;
+
+    &.alt {
+      color: var(--color-warning-base, #113357);
+    }
   }
 
   &.text-white {
@@ -282,7 +298,7 @@ h1 {
   --color-darkBlue-700: #0B223A;
 
   --color-white-10: #F7F7F7;
-  --color-white-20: #F2F2F2;
+  --color-white-20: rgba(255, 255, 255, 0.25);
   --color-white-30: #ECECEC;
   --color-white-40: #E6E6E6;
   --color-white-50: #DFDFDF;

@@ -23,6 +23,11 @@ const router = createRouter({
       name: 'media',
       component: () => import('../views/MediaView.vue'),
     },
+    {
+      path: '/lets-connect',
+      name: 'lets-connect',
+      component: () => import('../views/LetsConnect.vue'),
+    },
     // {
     //   path: '/about',
     //   name: 'about',

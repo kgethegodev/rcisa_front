@@ -13,7 +13,7 @@ defineProps({
     <img src="@/assets/placeholder-fellowship.png" alt="" srcset="">
     <div class="fellowship-blurb">
       <p class="outfit-xs-bold text-[var(--color-darkBlue-base)] mb-[1.6rem]">Fellowship type</p>
-      <p class="sm:outfit-xl-regular outfit-sm-regular mb-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent varius lorem dolor, sed vehicula eros congue vitae. </p>
+      <p class="outfit-xl-regular mb-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent varius lorem dolor, sed vehicula eros congue vitae. </p>
       <router-link to="/" class="rcisa-btn alt-rcisa-btn">
         <span class="outfit-sm-medium">Learn more</span>
         </router-link>

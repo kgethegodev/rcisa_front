@@ -98,7 +98,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
 
       <div class="flex gap-[4.8rem] sm:flex-row flex-col-reverse">
         <div class="text-white">
-          <p class="mb-[3.2rem] sm:outfit-xl-regular outfit-sm-regular">
+          <p class="mb-[3.2rem] outfit-xl-regular">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
             varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
             id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur
@@ -107,7 +107,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
             Vivamus id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce
             consectetur quis.
           </p>
-          <p class="mb-[3.2rem] sm:outfit-xl-regular outfit-sm-regular">
+          <p class="mb-[3.2rem] outfit-xl-regular">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
             varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
             id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur

@@ -23,6 +23,7 @@ watch(route, () => {
         <router-link to="/events">Ministries</router-link>
         <router-link to="/media">Media</router-link>
         <router-link to="/media">Donate</router-link>
+        <router-link to="/lets-connect">Let's Connect</router-link>
       </div>
 
       <router-link to="/" class="rcisa-btn">Plan a visit</router-link>
@@ -42,6 +43,7 @@ watch(route, () => {
       <router-link to="/our-story">Our Story</router-link>
       <router-link to="/events">Events</router-link>
       <router-link to="/media">Media</router-link>
+      <router-link to="/lets-connect">Let's Connect</router-link>
     </div>
   </div>
 </template>
@@ -50,7 +52,7 @@ watch(route, () => {
 .rcisa-header {
   padding: 1.2rem 0;
   border-radius: 0 0 1.6rem 1.6rem;
-  box-shadow: 0px 12px 16px -4px #1018281A;
+  box-shadow: 0 12px 16px -4px #1018281A;
 
 
   .rcisa-menu-container {
