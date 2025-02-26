@@ -19,14 +19,9 @@ watch(route, () => {
       <div class="rcisa-menu-container">
         <router-link  to="/">Home</router-link>
         <router-link to="/our-story">Our Story</router-link>
-        <router-link to="/events">Events</router-link>
-        <router-link to="/events">Ministries</router-link>
-        <router-link to="/media">Media</router-link>
-        <router-link to="/media">Donate</router-link>
-        <router-link to="/lets-connect">Let's Connect</router-link>
       </div>
 
-      <router-link to="/" class="rcisa-btn">Plan a visit</router-link>
+      <router-link to="/lets-connect" class="rcisa-btn">Plan a visit</router-link>
       <button class="menu-button" @click.prevent="show_menu = true">
         <vue-feather stroke="var(--color-darkBlue-base)" type="menu"></vue-feather>
       </button>
@@ -41,9 +36,7 @@ watch(route, () => {
     <div class="mobile-menu-items w-full flex flex-col gap-[1.6rem]">
       <router-link  to="/">Home</router-link>
       <router-link to="/our-story">Our Story</router-link>
-      <router-link to="/events">Events</router-link>
-      <router-link to="/media">Media</router-link>
-      <router-link to="/lets-connect">Let's Connect</router-link>
+      <router-link to="/lets-connect">Lets Connect</router-link>
     </div>
   </div>
 </template>

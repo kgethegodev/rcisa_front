@@ -60,8 +60,8 @@ import SermonCard from '@/components/cards/SermonCard.vue'
           </p>
         </div>
         <div class="flex flex-row gap-[1.6rem]">
-          <router-link to="/events" class="rcisa-btn">Plan a visit</router-link>
-          <router-link to="/events" class="rcisa-btn alt-rcisa-btn">Our Story</router-link>
+          <router-link to="/lets-connect" class="rcisa-btn">Plan a visit</router-link>
+          <router-link to="/our-story" class="rcisa-btn alt-rcisa-btn">Our Story</router-link>
         </div>
       </div>
     </div>

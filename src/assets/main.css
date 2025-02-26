@@ -4,6 +4,7 @@ html {
   font-family: "Outfit", serif;
   font-size: 10px;
   box-sizing: border-box;
+  overscroll-behavior: none;
 }
 
 /*fonts*/
@@ -216,11 +217,28 @@ h1 {
 
 
 .gradient-bkg {
-  background: linear-gradient(to bottom, #0B223A, #0b3d2b);
-  /*background-size: 200% 200%;*/
+  background: linear-gradient(to bottom,
+    #0B223A 0%,
+    #0B223A 15%,
+    #0B2F36 50%,
+    #0b3d2b 100%);
+  background-size: 200% 200%;
   backdrop-filter: blur(2.5rem);
   position: relative;
   overflow: hidden;
+  animation: subtleGradientShift 5s ease-in-out infinite;
+}
+
+@keyframes subtleGradientShift {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 25%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 @theme {

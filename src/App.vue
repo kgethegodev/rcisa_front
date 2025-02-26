@@ -5,9 +5,12 @@ import RCISAFooter from '@/components/RCISAFooter.vue'
 </script>
 
 <template>
-  <RCISAHeader />
+  <main>
+    <RCISAHeader />
   <RouterView />
-  <RCISAFooter />
+  </main>
+
+  <RCISAFooter/>
 </template>
 
 <style scoped>

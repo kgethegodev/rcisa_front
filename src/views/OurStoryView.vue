@@ -9,8 +9,8 @@ import FellowshipCard from '@/components/cards/FellowshipCard.vue'
         <span>One big family</span>
         OUR STORY
       </h1>
-      <div class="sm:h-[53rem] h-[25rem] overflow-hidden relative">
-        <img src="@/assets/placeholder.png" class="absolute w-full">
+      <div class="sm:h-[53rem] h-[25rem] overflow-hidden relative rounded-[2.4rem]">
+        <img src="@/assets/placeholder.png" class="absolute w-full sm:top-[-50%]">
       </div>
       <div>
         <p class="outfit-xl-regular sm:mb-[3.2rem] mb-[1.6rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur quis.</p>
