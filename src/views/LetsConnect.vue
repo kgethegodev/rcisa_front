@@ -65,7 +65,8 @@ const form = reactive({
         Meet our reverends
       </h1>
 
-      <div class="grid sm:grid-cols-3 gap-[3.2rem]">
+      <div class="grid sm:grid-cols-2 gap-[3.2rem]">
+        <reverend-card />
         <reverend-card />
         <reverend-card />
         <reverend-card />
