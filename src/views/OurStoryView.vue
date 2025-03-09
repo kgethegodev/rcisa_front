@@ -26,7 +26,7 @@ const timeline_entries = [
   <div class="container mx-auto flex flex-col gap-[4rem] sm:pt-[15.6rem] sm:pb-[9.6rem] pt-[18.5rem] pb-[4.8rem]">
       <h1>
         <span>One big family</span>
-        OUR STORY
+        Our Story
       </h1>
       <div class="sm:h-[53rem] h-[25rem] overflow-hidden relative rounded-[2.4rem]">
         <img src="@/assets/placeholder.png" class="absolute w-full sm:top-[-50%]">
@@ -39,7 +39,7 @@ const timeline_entries = [
   <div class="sm:py-[9.6rem] py-[4.8rem] container flex flex-col mx-auto gap-[4rem]">
     <h1>
       <span>The history </span>
-      TIMELINE
+      Timeline
     </h1>
 
     <div class="timeline-container">
