@@ -1,5 +1,5 @@
-<script setup>
-import { reactive, ref } from 'vue'
+<script setup lang="ts">
+import { reactive, ref, type Ref } from 'vue'
 import ReverendCard from '@/components/cards/ReverendCard.vue'
 import BranchCard from '@/components/cards/BranchCard.vue'
 import apiService from '@/services/api'
@@ -11,21 +11,21 @@ const form = reactive({
   message: '',
 })
 
-const errors = ref("")
-const success = ref("")
+const errors: any= ref("")
+const success: any = ref("")
 
 const submit = async () => {
   errors.value = ""
   success.value = ""
   try {
-    const res = await apiService.post('/visit', form)
+    const res: {result: any} = await apiService.post('/visit', form)
     form.name = ''
     form.email = ''
     form.phone_number = ''
     form.message = ''
 
     success.value = `Thank you ${res.result.visitor[0].name} for reaching out to us. We will get back to you soon.`
-  } catch (error) {
+  } catch (error: any) {
     errors.value = JSON.parse(error.response.data.error)
   } finally {
     window.scrollTo(0, 0)
