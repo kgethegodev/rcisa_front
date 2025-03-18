@@ -119,7 +119,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
     <h1 class="flex">
       <span>We would love to meet you!</span>
-      VISIT OUR BRANCHES
+      Visit our branches
     </h1>
 
     <div class="branches-container">
@@ -135,7 +135,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
     <h1 class="flex">
       <span>Hear the word</span>
-      SERMONS
+      Sermons
     </h1>
 
     <div class="sermons-container">

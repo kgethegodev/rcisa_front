@@ -108,7 +108,7 @@ const submit = async () => {
   <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
     <h1 class="flex">
       <span>We would love to meet you!</span>
-      VISIT OUR BRANCHES
+      Visit our branches
     </h1>
 
     <div class="grid sm:grid-cols-3 gap-[3.2rem]">
