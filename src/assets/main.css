@@ -178,9 +178,12 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 7.2rem;
-  display: flex;
   flex-direction: column;
   gap: .8rem;
+
+  &.hidden {
+    display: none;
+  }
 
   span {
     font-family: "Outfit", serif;

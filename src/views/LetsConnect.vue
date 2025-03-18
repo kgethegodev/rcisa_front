@@ -37,7 +37,7 @@ const submit = async () => {
 <template>
   <div class="bg-[var(--color-darkBlue-700)] sm:pb-[9.6rem] pb-[4.8rem] pt-[15.6rem]">
     <div class="container mx-auto flex flex-col gap-[4rem]">
-      <h1 class="text-white">
+      <h1 class="text-white flex">
         <span>We’d love to hear from you.</span>
         Get in touch with us
       </h1>
@@ -91,7 +91,7 @@ const submit = async () => {
 
   <div class="gradient-bkg sm:py-[9.6rem] py-[4.8rem]">
     <div class="container mx-auto flex flex-col gap-[4rem]">
-      <h1 class="text-white">
+      <h1 class="text-white flex">
         <span class="alt">Vafundisi vedu</span>
         Meet our reverends
       </h1>
@@ -106,7 +106,7 @@ const submit = async () => {
   </div>
 
   <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
-    <h1>
+    <h1 class="flex">
       <span>We would love to meet you!</span>
       VISIT OUR BRANCHES
     </h1>

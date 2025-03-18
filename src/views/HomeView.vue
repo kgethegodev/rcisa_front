@@ -78,7 +78,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
 
   <div class="bg-[var(--color-darkBlue-700)]">
     <div class="container flex flex-col mx-auto gap-[4rem] sm:py-[9.6rem] py-[4.8rem]">
-      <h1 class="text-white">
+      <h1 class="text-white flex">
         <span>Exciting things to look forward to</span>
         Upcoming Events
       </h1>
@@ -90,40 +90,31 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   </div>
 
   <div class="gradient-bkg">
-    <div class="container mx-auto  sm:py-[9.6rem] py-[4.8rem] flex flex-col gap-[4rem]">
-      <h1 class="text-white">
+    <div class="container mx-auto sm:py-[9.6rem] py-[4.8rem] flex flex-col gap-[4rem]">
+      <h1 class="text-white mb-[4rem] sm:hidden flex">
         <span>One big family</span>
         Our Story
       </h1>
-
       <div class="flex gap-[4.8rem] sm:flex-row flex-col-reverse">
         <div class="text-white">
+          <h1 class="text-white mb-[4rem] sm:flex hidden">
+            <span>One big family</span>
+            Our Story
+          </h1>
           <p class="mb-[3.2rem] outfit-xl-regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
-            varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
-            id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur
-            quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum.
-            Praesent varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis.
-            Vivamus id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce
-            consectetur quis.
-          </p>
-          <p class="mb-[3.2rem] outfit-xl-regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et congue ipsum. Praesent
-            varius lorem dolor, sed vehicula eros congue vitae. Fusce sed vestibulum felis. Vivamus
-            id lacinia lorem. Ut a sodales nulla. Phasellus eget hendrerit velit. Fusce consectetur
-            quis.
+            The Reformed Church International South Africa (RCISA) is a thriving faith community dedicated to serving Zimbabwean migrants in South Africa. Established as an extension of the Reformed Church in Zimbabwe (RCZ), RCISA provides spiritual guidance, fellowship, and community support rooted in the rich traditions of Reformed theology. Since its founding in 2009, the church has continued to grow, nurturing faith and empowering communities across South Africa.
           </p>
 
           <router-link to="/our-story" class="rcisa-btn">Our Story</router-link>
         </div>
 
-        <img src="@/assets/placeholder.png" alt="" srcset="" />
+        <img src="@/assets/rcisa_logo_big.svg" alt="" srcset="" />
       </div>
     </div>
   </div>
 
   <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
-    <h1>
+    <h1 class="flex">
       <span>We would love to meet you!</span>
       VISIT OUR BRANCHES
     </h1>
