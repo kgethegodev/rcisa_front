@@ -97,10 +97,13 @@ import SermonCard from '@/components/cards/SermonCard.vue'
       </h1>
       <div class="flex gap-[4.8rem] sm:flex-row flex-col-reverse">
         <div class="text-white">
-          <h1 class="text-white mb-[4rem] sm:flex hidden">
-            <span>One big family</span>
-            Our Story
-          </h1>
+          <div class="sm:block hidden">
+            <h1 class="text-white mb-[4rem] flex">
+              <span>One big family</span>
+              Our Story
+            </h1>
+          </div>
+          
           <p class="mb-[3.2rem] outfit-xl-regular">
             The Reformed Church International South Africa (RCISA) is a thriving faith community dedicated to serving Zimbabwean migrants in South Africa. Established as an extension of the Reformed Church in Zimbabwe (RCZ), RCISA provides spiritual guidance, fellowship, and community support rooted in the rich traditions of Reformed theology. Since its founding in 2009, the church has continued to grow, nurturing faith and empowering communities across South Africa.
           </p>
@@ -130,7 +133,7 @@ import SermonCard from '@/components/cards/SermonCard.vue'
   </div>
 
   <div class="container flex flex-col mx-auto gap-[4rem]  sm:py-[9.6rem] py-[4.8rem]">
-    <h1>
+    <h1 class="flex">
       <span>Hear the word</span>
       SERMONS
     </h1>
